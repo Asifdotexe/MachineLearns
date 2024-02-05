@@ -8,13 +8,14 @@ Machine learning is a dynamic field that encompasses a wide range of techniques 
 
 ## Projects
 
-In this repository, you'll discover projects that cover a wide range of topics in time series analysis. Some examples of projects you can find here include:
+In this repository, you'll discover projects that cover a wide range of topics in machine learning. Some examples of projects you can find here include:
 
-> #### Simple Linear Regression <hr>
+> #### Supervised Machine Learning <hr>
 > Sales Prediction based on Advertisement dataset <br>
-> Simple Linear Regression on Fuel Consumption dataset
+> Simple Linear Regression on Fuel Consumption dataset <br>
+> Naive Bayes on PIMA Diabetes Dataset
 
-> #### K-Nearest Neighbour <hr>
+> #### Unsupervised Machine Learning <hr>
 > K-Nearest Neighbors on Telecommunication Company dataset
 
 Each project comes with detailed explanations, code examples, and visualizations to help you grasp the concepts and techniques applied.
