@@ -13,7 +13,9 @@ In this repository, you'll discover projects that cover a wide range of topics i
 > #### Supervised Machine Learning <hr>
 > Sales Prediction based on Advertisement dataset <br>
 > Simple Linear Regression on Fuel Consumption dataset <br>
-> Naive Bayes on PIMA Diabetes Dataset
+> Naive Bayes on PIMA Diabetes dataset
+> Logistic Regression on PIMA Diabetes dataset
+> Decision Tree on Credit dataset
 
 > #### Unsupervised Machine Learning <hr>
 > K-Nearest Neighbors on Telecommunication Company dataset
