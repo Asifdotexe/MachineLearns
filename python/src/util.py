@@ -1,6 +1,9 @@
 import pandas as pd
 from sklearn.metrics import roc_auc_score
 from sklearn.ensemble import RandomForestClassifier
+import seaborn as sns
+import matplotlib.pyplot as plt
+import numpy as np
 
 def check_imbalance(df, class_column='class'):
     no_of_true = len(df.loc[df[class_column] == True])
@@ -60,7 +63,6 @@ def random_forest_tuning(x_train, x_test, y_train, y_test, n, d, l, seed):
     model_performance_df.rename(columns={0: 'parameter', 1: 'train_auc', 2: 'test_auc'}, inplace=True)
 
     return model_performance_df
-
 
 def get_feature_importance(X_train, model, top_n=5):
     """
