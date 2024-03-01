@@ -83,7 +83,72 @@ def get_feature_importance(X_train, model, top_n=5):
         t2 = [X_train.columns[i], feature_importances[i]]
         t1.append(t2)
 
-    imp_feat_df = pd.DataFrame(t1, columns=['Name', 'Imp'])
-    imp_feat_df = imp_feat_df.sort_values(by=['Imp'], ascending=False).head(top_n)
+    imp_feat_df = pd.DataFrame(t1, columns=['name', 'importance'])
+    imp_feat_df = imp_feat_df.sort_values(by=['importance'], ascending=False).head(top_n)
 
     return imp_feat_df
+
+def print_categorical_value_counts(df, cat_cols):
+    """
+    Print value counts for each categorical column in the DataFrame.
+
+    Parameters:
+    - df: DataFrame
+    - cat_cols: List of categorical column names
+
+    Returns:
+    - None
+    """
+    for col in cat_cols:
+        print("=" * 15)
+        print(col)
+        print("--" * 5)
+        print(df[col].value_counts())
+
+import pandas as pd
+
+def perform_eda(file_path, num_sheets=None):
+    try:
+        if file_path.endswith('.xlsx'):
+            # Excel file
+            if num_sheets is not None:
+                # EDA for each sheet
+                xls = pd.ExcelFile(file_path)
+                sheet_names = xls.sheet_names
+                results = {}
+                
+                for sheet_name in sheet_names[:num_sheets]:
+                    df = pd.read_excel(file_path, sheet_name)
+                    eda_results = {
+                        "Sheet Name": sheet_name,
+                        "Shape": df.shape,
+                        "Columns": df.columns.tolist(),
+                        "Info": df.info(),
+                        "Missing Values": df.isnull().sum()
+                    }
+                    results[sheet_name] = eda_results
+                
+                return results
+            else:
+                raise ValueError("Number of sheets not provided for Excel file.")
+        elif file_path.endswith(('.csv', '.json')):
+            # EDA for CSV or JSON file
+            df = pd.read_csv(file_path) if file_path.endswith('.csv') else pd.read_json(file_path)
+            eda_results = {
+                "File Name": file_path,
+                "Shape": df.shape,
+                "Columns": df.columns.tolist(),
+                "Info": df.info(),
+                "Missing Values": df.isnull().sum()
+            }
+            return eda_results
+        else:
+            raise ValueError("Unsupported file format. Please provide an Excel, CSV, or JSON file.")
+    except Exception as e:
+        return f"Error performing EDA: {str(e)}"
+
+# Example usage:
+file_path = 'your_file.xlsx'  # Replace with your file path
+num_sheets = 2  # Replace with the desired number of sheets for Excel files
+eda_results = perform_eda(file_path, num_sheets)
+print(eda_results)
