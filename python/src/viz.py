@@ -88,3 +88,33 @@ def plot_confusion_matrix(y_true, y_pred, labels=None):
     cm_display.plot()
 
     plt.show()
+
+def plot_histogram_with_stats(data_series):
+    """
+    Plots a histogram with mean and median lines for the given data series.
+
+    Parameters:
+    data_series (pandas.Series): The data series for which to generate the histogram.
+
+    Returns:
+    None
+    """
+    sns.histplot(data_series)
+    plt.axvline(data_series.mean(), color='r', linestyle='--')
+    plt.axvline(data_series.median(), color='g', linestyle='-')
+    
+    plt.legend({'Mean': data_series.mean(), 'Median': data_series.median()})
+    plt.show()
+
+def plot_boxplot(df, x_col, y_col):
+    """
+    Function to create a boxplot using Seaborn.
+
+    Parameters:
+        df (DataFrame): The DataFrame containing the data.
+        x_col (str): The column name for the x-axis.
+        y_col (str): The column name for the y-axis.
+    """
+    plt.figure(figsize=(6,5))
+    sns.boxplot(x=x_col, y=y_col, data=df)
+    plt.show()
