@@ -21,24 +21,3 @@ In this repository, you'll discover projects that cover a wide range of topics i
 > - Customer Clustering using K-Means on Telecom Company dataset
 
 Each project comes with detailed explanations, code examples, and visualizations to help you grasp the concepts and techniques applied.
-
-## Getting Started
-
-To explore any projects in this repository, simply navigate to the project's directory and follow the instructions in the README file. You'll find information about the project's goals, data sources, methodologies, and how to run the code on your own machine.
-
-## Project Files
-
-Here are the latest project files in the repository:
-
-- [Bank Digital Transformation.ipynb](src/Bank Digital Transformation.ipynb) (Last commit: updating several files, 5 hours ago)
-- [Clustering and Modeling on Fuel Consumption Dataset.ipynb](src/Clustering and Modeling on Fuel Consumption Dataset.ipynb) (Last commit: updating several files, 5 hours ago)
-- [Customer Clustering using K-Means.ipynb](src/Customer Clustering using K-Means.ipynb) (Last commit: performing kmeans, 4 hours ago)
-- [Decision Tree on Credit data.ipynb](src/Decision Tree on Credit data.ipynb) (Last commit: updated the code, 2 months ago)
-- [K-Nearest Neighbors on Telecommunication Company Dataset.ipynb](src/K-Nearest Neighbors on Telecommunication Company Dataset.ipynb) (Last commit: Added datasets and updated notebooks, 2 months ago)
-- [Logistic Regression on PIMA dataset.ipynb](src/Logistic Regression on PIMA dataset.ipynb) (Last commit: updated the code, 2 months ago)
-- [Naive Bayes on PIMA Diabetes Dataset.ipynb](src/Naive Bayes on PIMA Diabetes Dataset.ipynb) (Last commit: updated the code, 2 months ago)
-- [Sales Prediction based on Advertisement.ipynb](src/Sales Prediction based on Advertisement.ipynb) (Last commit: Added datasets and updated notebooks, 2 months ago)
-- [Simple Linear Regression on Fuel Consumption Dataset.ipynb](src/Simple Linear Regression on Fuel Consumption Dataset.ipynb) (Last commit: Added datasets and updated notebooks, 2 months ago)
-- [Telecom Model.ipynb](src/Telecom Model.ipynb) (Last commit: Added datasets and updated notebooks, 2 months ago)
-
-Feel free to explore these files to dive deeper into each project!
