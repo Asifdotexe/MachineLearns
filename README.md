@@ -11,17 +11,13 @@ Machine learning is a dynamic field that encompasses a wide range of techniques 
 In this repository, you'll discover projects that cover a wide range of topics in machine learning. Some examples of projects you can find here include:
 
 > #### Supervised Machine Learning <hr>
-> Sales Prediction based on Advertisement dataset <br>
-> Simple Linear Regression on Fuel Consumption dataset <br>
-> Naive Bayes on PIMA Diabetes dataset
-> Logistic Regression on PIMA Diabetes dataset
-> Decision Tree on Credit dataset
+> - Sales Prediction based on Advertisement dataset
+> - Simple Linear Regression on Fuel Consumption dataset
+> - Naive Bayes on PIMA Diabetes dataset
+> - Logistic Regression on PIMA Diabetes dataset
+> - Decision Tree on Credit dataset
 
 > #### Unsupervised Machine Learning <hr>
-> K-Nearest Neighbors on Telecommunication Company dataset
+> - Customer Clustering using K-Means on Telecom Company dataset
 
 Each project comes with detailed explanations, code examples, and visualizations to help you grasp the concepts and techniques applied.
-
-## Getting Started
-
-To explore any projects in this repository, simply navigate to the project's directory and follow the instructions in the README file. You'll find information about the project's goals, data sources, methodologies, and how to run the code on your own machine.
